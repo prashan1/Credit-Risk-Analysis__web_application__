@@ -22,10 +22,10 @@ def submit():
         i = request.form['9']
         j = request.form['10']
         test = [a,b,c,d,e,f,g,h,i,j,0]
-        Value = str(model.predict([test]))
-        predictedValue = str(model.predict_proba([test])[:,1])
+        Value = (model.predict([test]))
+        predictedValue = (model.predict_proba([test])[:,1])
     
-    return render_template('submit.html', predictedValue = predictedValue, Value = Value)
+    return render_template('Form.html', predictedValue = predictedValue, Value = Value)
 
 if __name__ == '__main__':
     app.run(debug = True)
