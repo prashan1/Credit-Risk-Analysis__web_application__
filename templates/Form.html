@@ -4,21 +4,34 @@
 	<title> Loan Risk Prediction </title>
 </head>
 <body>
-	<p><i> An Application that can predict to whom financial institutes should give loans or credit </i></p>
+	<p><i> The credit risk analysis is a major problem for financial institutions such as banks, lendors and so on. 
+Therefore this application could help them to predict if customer are able to pay their loan in future. 
+Credit risk models are developed to classify applicants as accepted or rejected with respect to the characteristics of the applicants such as age, current account and amount of credit
+ </i></p>
 	
 	
 	<form method = 'POST'  action = '/submit' >
 		
-		<p> RevolvingUtilizationOfUnsecuredLines <input type='number'step='0.01' name= '1'> </p>
-		<p> Age <input type='number'step='0.01' name= '2'> </p>
-		<p> NumberOfTime30-59DaysPastDue <input type='number'step='0.01' name= '3'> </p>
-		<p> DeptRation <input type='number'step='0.01' name= '4'> </p>
-		<p> MonthlyIncome <input type='number' step='0.01'name= '5'> </p>
-		<p> NumberOfOpenCreditLinesAndLoans <input type='number'step='0.01' name= '6'> </p>
-		<p> NumberOfTimes90DaysLate <input type='number'step='0.01' name= '7'> </p>
-		<p> NumberRealEstateLoansOrLines <input type='number'step='0.01' name= '8'> </p>
-		<p> NumberOfTime30-59DaysPastDue <input type='number' step='0.01'name= '9'> </p>
-		<p> NumberOfDependets <input type='number' step='0.01'name= '10'> </p>
+		
+		
+		<p> Credit Utilization Ratio <input type='number'step='0.01' name= '1'> </p>     --- Ratio of total debt and total assets
+		<p> Age <input type='number'step='0.01' name= '2'> </p> 				 - age of the borrower
+
+	<p> Number of 30-59 days past dues <input type='number'step='0.01' name= '3'> </p>		 -- Number of times borrower have paid their EMI 30-59 days late
+
+		<p> DeptRatio <input type='number'step='0.01' name= '4'> </p>			 -- ratio of Monthly debt or expenditure and Total income
+
+		<p> Monthly Income <input type='number' step='0.01'name= '5'> </p>
+		<p> Number of open credit lines <input type='number'step='0.01' name= '6'> </p>	   - Number of open loans or credit card borrower holds
+
+		<p> Number of 90 days past dues <input type='number'step='0.01' name= '7'> </p>		 -- Number of times borrower have paid their EMI 90 days late
+
+		<p> Number of home loans <input type='number'step='0.01' name= '8'> </p>		 - Number of homes borrower pay loans of
+
+		<p> Number of 60-89 days past dues <input type='number' step='0.01'name= '9'> </p>	 -- Number of times borrower have paid their EMI 60-89 days late
+
+		<p> Number of dependents <input type='number' step='0.01'name= '10'> </p>		 - Number of member depend upon borrower
+
 		<p>		   <input type = 'submit'> </p>
 	</form>
 		{% if predictedValue %}
