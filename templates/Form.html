@@ -21,14 +21,10 @@
 		<p> NumberOfDependets <input type='number' step='0.01'name= '10'> </p>
 		<p>		   <input type = 'submit'> </p>
 	</form>
-		<!-- <form method = 'POST' , action = '/submit' > -->
-	
-		<!-- <p><input type = 'text' name='username' placeholder='Enter you email ID'> </p> -->
-		
-		
-		<!-- <p><input type = 'number' name = 'no1' , placeholder='Enter you M.no'><h2> + </h2><input type = 'number' name = 'no2' , placeholder='Enter you M.no'></p> -->
-		<!-- <p><input type = 'submit' ></p> -->
-		
-	<!-- </form> -->
+		{% if predictedValue %}
+			<h1> Probability <i>{{predictedValue}}</i> </h1>
+			<h1> Ans <i>{{Value}}</i></h1>
+			
+		{% endif %}
 </body>
 </html>
