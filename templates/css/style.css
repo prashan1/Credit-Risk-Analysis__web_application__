@@ -1,0 +1,70 @@
+#header img{
+    max-width: 100%;
+}
+
+.poster {
+    width: 100%;
+    height: 500px;
+}
+
+.info {
+    margin: 20px 20px;
+    padding: 25px;
+    background-color: #c6d49f;
+    border: solid grey 2px;
+}
+
+#side_img {
+    margin-left: 100px;
+    width: 400px;
+    min-height: 100px;
+}
+
+#side_img img {
+    margin: 250px 10px;
+    width: 100%;
+}
+
+.input_field {
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    width: 100%;
+    border: none;
+    background: #e2e1e1;
+}
+
+.heading:hover::after {
+    cursor: pointer;
+    content: attr(data-tooltip);
+    background-color: grey;
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    padding: 4px;
+    margin: -40px 0px 0px -10px;
+}
+
+.submit_btn {
+    background-color: #4CAF50;
+    color: rgba(8, 8, 197, 0.789);
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 150%;
+    width: 100%;
+}
+
+.submit_btn:hover {
+    opacity: 1;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    padding: 25px 0px;
+    margin-top: 25px;
+}
