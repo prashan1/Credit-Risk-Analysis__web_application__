@@ -1,0 +1,94 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+#header img{
+    max-width: 100%;
+}
+h2{
+	text-align:center;
+}
+h5 {
+	font: 50px bold black;
+	text-align:center;
+	line-height: 2;
+
+	word-spacing: 7px;
+
+}
+.poster {
+    width: 100%;
+    height: auto;
+}
+
+#side_img {
+    margin-left: 60px;
+
+    width: 500px;
+}
+
+#side_img img {
+    margin: 120px 10px;
+    width: 100%;
+}
+
+.input_field {
+	font:20px bold black;
+	text-align:center;
+    padding: 10px;
+    margin: 2px 0 5px 0;
+    width: 100%;
+    border: none;
+    background: #e2e1e1;
+}
+span{	
+	font:20px bold black;
+
+	text-align:left-side;
+}
+.heading:hover::after {
+    cursor: pointer;
+    content: attr(data-tooltip);
+    background-color: grey;
+    color: white;
+    position: absolute;
+    border-radius: 3px;
+    padding: 4px;
+    margin: -40px 0px 0px -10px;
+}
+
+.submit_btn{
+	display:block;
+	text-decoration:none;
+	background-color:black;
+	padding: 5px 5px; 
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 150%;
+    width: 100%; 
+	text-align: center;
+	color : white;
+	margin-top:10px;
+	/* background:#f1f1f1; */
+}
+
+.submit_btn:hover:not(#acitve){
+	background:turquoise;
+	color:white;
+	 }
+
+.submit_btn:hover {
+	text-align:left-side
+    opacity: 1;
+}
+
+#output{
+	font: 20px bold black;
+	margin-left : 150px;
+	margin-top:-40px;
+}
+
+
+
