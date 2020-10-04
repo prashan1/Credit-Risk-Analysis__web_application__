@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+   <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <img class="poster" src="{{url_for('static', filename='image/NewImage2.jpg')}}"  alt="image">
+        
+    </div>
+
+	<div class="w3-container w3-LightGrey" style="padding:18px 16px; line-height:1.8" id="about" >
+
+  <h2 class="w3-center " style ='font-weight:600'>Loan Default Risk App</h2>
+  <p class="w3-center w3-large ">Many people struggle to get loans due to insufficient or non-existent credit
+histories. And, unfortunately, this population is often taken advantage of by
+untrustworthy lenders. Companies like Home Credit strives to broaden financial
+inclusion for the unbanked population by providing a positive and safe borrowing
+experience. In order to make sure this underserved population has a positive loan
+experience, Home Credit makes use of a variety of alternative data (e.g., including telco
+and transactional information) to predict their client's repayment abilities. By using
+various Statistical, Machine Learning and Deep Learning techniques we unlock the full potential of
+their data with accuracy of 99.7%. Doing so will ensure that clients capable of repayment are not rejected and
+that loans are given with a principal, maturity, and repayment calendar that will
+empower their clients to be successful.</p>
+</div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6" id="box">
+                <form method = 'POST'  action = '/submit' >
+                    <!-- change data-tooltip accordingly-->
+                    <span class="heading" data-tooltip="Ratio of total debt and total assets">Credit Utilization Ratio</span>  
+                    <input type='number'step='0.01' class="input_field" name = '1'> 
+                    <br>
+                    <span class="heading" data-tooltip="Age of the borrower">Age</span>
+                    <input type='number'step='0.01' class="input_field" name = '2'> 
+                    <br>
+                    <span class="heading" data-tooltip="Number of times borrower have paid their EMI 30-59 days late">Number of 30-59 days past dues </span>
+                    <input type='number'step='0.01' class="input_field" name = '3'> 
+                    <br>
+                    <span class="heading" data-tooltip="Ratio of Monthly debt or expenditure and Total income">DeptRatio</span>
+                    <input type='number'step='0.01' class="input_field" name = '4'>            
+                    <br>
+                    <span class="heading" data-tooltip="Duhh!!">Monthly Income</span> 
+                    <input type='number' step='0.01' class="input_field" name = '5'>                 
+                    <br>
+                    <span class="heading" data-tooltip="Number of open loans or credit card borrower holds">Number of open credit lines</span> 
+                    <input type='number'step='0.01' class="input_field" name = '6'> 
+                    <br>
+                    <span class="heading" data-tooltip="Number of times borrower have paid their EMI 90 days late">Number of 90 days past dues</span> 
+                    <input type='number'step='0.01' class="input_field" name = '7'>	 
+                    <br>
+                    <span class="heading" data-tooltip="Number of homes borrower pay loans of">Number of home loans </span>
+                    <input type='number'step='0.01' class="input_field" name = '8'>	
+                    <br>
+                    <span class="heading" data-tooltip="Number of times borrower have paid their EMI 60-89 days late">Number of 60-89 days past dues </span>
+                    <input type='number' step='0.01' class="input_field" name = '9'> 	 
+                    <br>
+                    <span class="heading" data-tooltip="Number of member depend upon borrower">Number of dependents</span>
+                    <input type='number' step='0.01' class="input_field" name = '10'> 
+                    <input type = 'submit' class="submit_btn">
+                </form>
+            </div>
+            <div class="col-sm-6">
+                <div id="side_img">
+                    <img src="{{url_for('static', filename='image/Loan.jpg')}}" alt="image">
+                </div>
+				<div id='output'>
+						{% if Value %}
+							{% if Value == '1'%}
+								<h3 style = 'font: 25px bold black'> Customer Is Not Capable Of Repayment </h3>
+									<h2 style = ' text-align:left;margin-top:40px' ><b> ->        REJECTED </b></h2>
+							 {% else %}
+								 <h3 style = 'font: 25px bold black'>Customer Is Capable Of Repayment <br></h3>
+									<h2 style = ' text-align:left;margin-top:40px' ><b> ->       ACCEPTED </b></h2>
+						    {% endif %}
+						
+						<form action = '/' method = 'POST' style = 'margin-left:-70px; margin-top: 146px;width:100%' >
+							<input type = 'submit' class="submit_btn" value = 'Refresh'>
+						</form>
+					   {% endif %}
+				</div>
+            </div>
+        </div>
+    </div>
+
+<footer class="w3-center w3-black w3-padding-17">
+        <h5 ><b>contacts<b></h5>
+<div class="w3-xlarge w3-section">
+    <a href="https://www.linkedin.com/in/prashant-bisht-0b1a7b194/" target="_blank">
+	  <i class="fa fa-linkedin w3-hover-opacity "></i></a>&emsp;
+	  <a href="https://www.github.com/jayborkar" target="_blank">
+	<a href="https://www.linkedin.com/in/prashant-bisht-0b1a7b194/" target="_blank">
+	  <i class="fa fa-twitter w3-hover-opacity"></i></a>&emsp;
+	  <i class="fa fa-github w3-hover-opacity"></i></a>&emsp; 
+    <a href="https://www.facebook.com/" target="_blank">
+	  <i class="fa fa-facebook-official w3-hover-opacity"></i></a>&emsp;
+    <a href="https://www.instagram.com/" target="_blank">
+	  <i class="fa fa-instagram w3-hover-opacity"></i></a>&emsp;
+  </div>
+  
+
+</body>
+</html>
