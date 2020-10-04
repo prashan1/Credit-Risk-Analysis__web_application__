@@ -64,9 +64,12 @@ Now we create the simple flask app. The flask app consists of 2 main components:
 
 The Final Machine Learning Model is deployed as a Web application (Restful API) on Heroku Cloud platform, link for demo ////////
 
+##OVERVIEW
 
 ![Demo1](https://user-images.githubusercontent.com/57286404/95007026-5d609000-0628-11eb-8131-41bf95357813.jpg)
+
 ![Demo2](https://user-images.githubusercontent.com/57286404/95007012-2e4a1e80-0628-11eb-82c8-194fdde4db7c.png)
+
 ![Demo3](https://user-images.githubusercontent.com/57286404/95007011-2be7c480-0628-11eb-8785-1e1f50f430c4.jpg)
 
 
