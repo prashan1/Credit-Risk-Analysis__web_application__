@@ -7,6 +7,14 @@ Live Project --   https://creditriskanalysis.herokuapp.com/
 ## Overview
 Many people struggle to get loans due to insufficient or non-existent credit histories. And, unfortunately, this population is often taken advantage of by untrustworthy lenders. Companies like Home Credit strives to broaden financial inclusion for the unbanked population by providing a positive and safe borrowing experience. In order to make sure this underserved population has a positive loan experience, Home Credit makes use of a variety of alternative data (e.g., including telco and transactional information) to predict their clients' repayment abilities. By using various Statistical, Machine Learning  and Deep learning methods we unlock the full potential of their data. Doing so will ensure that clients capable of repayment are not rejected and that loans are given with a principal, maturity, and repayment calendar that will empower their clients to be successful. 
 
+##OVERVIEW
+
+![Demo1](https://user-images.githubusercontent.com/57286404/95007026-5d609000-0628-11eb-8131-41bf95357813.jpg)
+
+![Demo2](https://user-images.githubusercontent.com/57286404/95007012-2e4a1e80-0628-11eb-82c8-194fdde4db7c.png)
+
+![Demo3](https://user-images.githubusercontent.com/57286404/95007011-2be7c480-0628-11eb-8785-1e1f50f430c4.jpg)
+
 The objective of this project is to use historical loan application data to predict whether or not an applicant will be able to repay a loan. This is a standard supervised classification task:
 
 - Supervised: The labels are included in the training data and the goal is to train a model to learn to predict the labels from the features
@@ -66,13 +74,5 @@ We save the model to disk using Python’s built in persistence model (pickle or
 Now we create the simple flask app. The flask app consists of 2 main components: the python app (app.py) and the HTML templates. While we can return HTML code from the python file itself, it would be cumbersome to code entire HTML as a string in the python file. Templating come to the rescue!
 
 The Final Machine Learning Model is deployed as a Web application (Restful API) on Heroku Cloud platform, link for demo   https://creditriskanalysis.herokuapp.com/
-
-##OVERVIEW
-
-![Demo1](https://user-images.githubusercontent.com/57286404/95007026-5d609000-0628-11eb-8131-41bf95357813.jpg)
-
-![Demo2](https://user-images.githubusercontent.com/57286404/95007012-2e4a1e80-0628-11eb-82c8-194fdde4db7c.png)
-
-![Demo3](https://user-images.githubusercontent.com/57286404/95007011-2be7c480-0628-11eb-8785-1e1f50f430c4.jpg)
 
 
