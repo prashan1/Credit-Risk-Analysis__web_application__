@@ -53,7 +53,7 @@ We use the following Machine learning algorithms and built Classification models
 ### 5)	Gradient Boosting Machine (GBM)
 
 Out of the above, the first four are Baseline models and last three are improved models.
-## We achieved highest model accuracy of 85.5% with gradient boosting using Auc_Roc_score.
+## We achieved highest model accuracy of 85.8% with gradient boosting using Auc_Roc_score.
 ## Model Evaluation 
 
 Evaluated Classification models by Accuracy, Confusion Matrix, Precision, Recall, True Negative Rate (TNR), False Discovery Rate (FDR), Gain Chart, Lift Chart, K-S Chart, ROC – AUC chart.
